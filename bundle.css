@@ -1,0 +1,6 @@
+nav.svelte-liketb{width:20rem;background-color:#191919;height:100%;border-right:solid 1px #191919}nav.svelte-liketb .logo-title.svelte-liketb{display:flex;height:8rem}nav.svelte-liketb .logo-title h1.svelte-liketb{color:#FAFAFA;align-self:center;margin:0 0 0 1rem}nav.svelte-liketb .logo-title .logo.svelte-liketb{width:80px;height:80px;border-radius:100%;align-self:center}nav.svelte-liketb .sections.svelte-liketb{height:20rem}nav.svelte-liketb .sections ul.svelte-liketb{list-style:none;color:#FAFAFA;line-height:3rem;cursor:pointer}nav.svelte-liketb .sections ul li.svelte-liketb{padding-left:1.25rem;border-top-left-radius:2rem;border-bottom-left-radius:2rem;margin-bottom:1rem;text-transform:uppercase}nav.svelte-liketb .sections ul li.svelte-liketb:last-of-type{margin-bottom:0}nav.svelte-liketb .sections ul li.svelte-liketb:hover,li.active.svelte-liketb{background-color:#313131}
+main.svelte-1f9nqvo{padding:2rem;width:calc(100% - 20rem);background-color:#444444;color:#FAFAFA}
+p.svelte-ivj8vz{line-height:1.5rem;color:#DDDDDD}p.svelte-ivj8vz:first-of-type{margin-top:2rem}
+.project-container.svelte-1h8zpyb{display:flex;justify-content:space-between;width:100%}.card.svelte-1h8zpyb{flex:0.3 1 30%}
+
+/*# sourceMappingURL=bundle.css.map */
