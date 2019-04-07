@@ -1,0 +1,38 @@
+<main>
+  <svelte:component this={Router} />
+</main>
+
+<script>
+import { routes } from '../data/router/routes'
+import { store } from '../data/state-management/store'
+
+/*** on create */
+location.hash.indexOf('#') < 0
+? location.hash = '#homepage'
+: store.set({
+  page: location.hash === '' || location.hash.substr(1) === '' ? 'homepage' : location.hash.substr(1)
+});
+
+/*** location on state  */
+window.onhashchange = () => {
+  const { page } = store.get();
+  if (page !== location.hash.substr(1)) store.set({page: location.hash.substr(1)})
+}
+
+export default {
+  computed: {
+    Router: ({ $page }) => routes[$page] === undefined 
+      ? routes.notfound
+      : routes[$page]
+  }
+};
+</script>
+
+<style>
+main {
+  padding: 2rem;
+  width: calc(100% - 20rem);
+  background-color: #444444;
+  color: #FAFAFA;
+}
+</style>
